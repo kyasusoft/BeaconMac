@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "AppDelegate.h"
 
+#define UUID @"00000000-7588-1001-B000-001C4DD17CFA"
+
 @implementation ViewController{
     BOOL _bluetoothOn;
 }
@@ -42,13 +44,15 @@
     if (sender.state == 1) {
         if (_bluetoothOn) {
             // UUIDを適当に作成
-            NSUUID *proximityUUID = [[NSUUID alloc] initWithUUIDString:@"00000000-7588-1001-B000-001C4DD17CFA"];
+            NSUUID *proximityUUID = [[NSUUID alloc] initWithUUIDString:UUID];
+            uint16_t majorNum = _majorTextFiled.integerValue;
+            uint16_t minorNum =  _minorTextFiled.integerValue;
             
             // アドバタイズ用のデータを作成
             MBCBeaconAdvertisementData *beaconData
             = [[MBCBeaconAdvertisementData alloc] initWithProximityUUID:proximityUUID
-                                                                  major:1
-                                                                  minor:1
+                                                                  major:majorNum
+                                                                  minor:minorNum
                                                           measuredPower:-58];
             
             // アドバタイズ開始

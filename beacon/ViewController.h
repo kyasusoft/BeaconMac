@@ -14,6 +14,9 @@
 
 @property (strong, nonatomic) CBPeripheralManager *manager;
 
+@property (weak) IBOutlet NSTextField *majorTextFiled;
+@property (weak) IBOutlet NSTextField *minorTextFiled;
+
 - (IBAction)advertis:(NSButton *)sender;
 
 @end
