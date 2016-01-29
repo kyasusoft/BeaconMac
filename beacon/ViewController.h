@@ -7,8 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MBCBeaconAdvertisementData.h"
+#import <IOBluetooth/IOBluetooth.h>
 
 @interface ViewController : NSViewController
+
+@property (strong, nonatomic) CBPeripheralManager *manager;
 
 - (IBAction)advertis:(NSButton *)sender;
 
