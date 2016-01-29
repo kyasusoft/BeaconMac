@@ -10,6 +10,7 @@
 
 @interface ViewController : NSViewController
 
+- (IBAction)advertis:(NSButton *)sender;
 
 @end
 

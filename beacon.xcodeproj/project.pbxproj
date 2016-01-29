@@ -12,6 +12,8 @@
 		4105F0EC1C5B246B00B3F0BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4105F0EB1C5B246B00B3F0BA /* ViewController.m */; };
 		4105F0EE1C5B246B00B3F0BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4105F0ED1C5B246B00B3F0BA /* Assets.xcassets */; };
 		4105F0F11C5B246B00B3F0BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4105F0EF1C5B246B00B3F0BA /* Main.storyboard */; };
+		4105F0F91C5B249400B3F0BA /* IOBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4105F0F81C5B249400B3F0BA /* IOBluetooth.framework */; };
+		4105F0FC1C5B24D000B3F0BA /* MBCBeaconAdvertisementData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4105F0FB1C5B24D000B3F0BA /* MBCBeaconAdvertisementData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,9 @@
 		4105F0ED1C5B246B00B3F0BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4105F0F01C5B246B00B3F0BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4105F0F21C5B246B00B3F0BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4105F0F81C5B249400B3F0BA /* IOBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOBluetooth.framework; path = System/Library/Frameworks/IOBluetooth.framework; sourceTree = SDKROOT; };
+		4105F0FA1C5B24D000B3F0BA /* MBCBeaconAdvertisementData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBCBeaconAdvertisementData.h; sourceTree = "<group>"; };
+		4105F0FB1C5B24D000B3F0BA /* MBCBeaconAdvertisementData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBCBeaconAdvertisementData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4105F0F91C5B249400B3F0BA /* IOBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 		4105F0D81C5B246B00B3F0BA = {
 			isa = PBXGroup;
 			children = (
+				4105F0F81C5B249400B3F0BA /* IOBluetooth.framework */,
 				4105F0E31C5B246B00B3F0BA /* beacon */,
 				4105F0E21C5B246B00B3F0BA /* Products */,
 			);
@@ -60,6 +67,8 @@
 				4105F0E51C5B246B00B3F0BA /* AppDelegate.m */,
 				4105F0EA1C5B246B00B3F0BA /* ViewController.h */,
 				4105F0EB1C5B246B00B3F0BA /* ViewController.m */,
+				4105F0FA1C5B24D000B3F0BA /* MBCBeaconAdvertisementData.h */,
+				4105F0FB1C5B24D000B3F0BA /* MBCBeaconAdvertisementData.m */,
 				4105F0ED1C5B246B00B3F0BA /* Assets.xcassets */,
 				4105F0EF1C5B246B00B3F0BA /* Main.storyboard */,
 				4105F0F21C5B246B00B3F0BA /* Info.plist */,
@@ -147,6 +156,7 @@
 			files = (
 				4105F0EC1C5B246B00B3F0BA /* ViewController.m in Sources */,
 				4105F0E91C5B246B00B3F0BA /* main.m in Sources */,
+				4105F0FC1C5B24D000B3F0BA /* MBCBeaconAdvertisementData.m in Sources */,
 				4105F0E61C5B246B00B3F0BA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
